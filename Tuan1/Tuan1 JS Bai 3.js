@@ -24,11 +24,11 @@ let koalasMinimum = checkMinimum(koalasScore);
 if(dolphinsAverage > koalasAverage && dolphinsMinimum)
     console.log("Dolphins win");
 else if(dolphinsAverage > koalasAverage && !dolphinsMinimum)
-    console.log("Koalas wins");
+    console.log("No team wins");
 else if (dolphinsAverage < koalasAverage && koalasMinimum)
     console.log("Koalas win");
 else if (dolphinsAverage < koalasAverage && !koalasMinimum)
-    console.log("Dolphins win");
+    console.log("No teams win");
 else if(dolphinsAverage == koalasAverage && dolphinsMinimum && koalasMinimum)
     console.log("Draw");
 else if(dolphinsAverage == koalasAverage && !dolphinsMinimum && koalasMinimum)

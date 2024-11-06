@@ -208,10 +208,10 @@ function screenAdd({navigation, route}){
   return(
     <ScrollView style={styles.container}showsHorizontalScrollIndicator={false}>
       <View style={{alignItems:'center'}}>
-        <Image source={{uri:image}}/>
+        <Image source={{uri:image}} style={{ width: 300, height: 300 }}/>
       </View>
       <View>
-        <Text style={{fontWeight:'bold', fontSize:22}}>{title}</Text>
+        <Text style={{marginTop:15,fontWeight:'bold', fontSize:24}}>{title}</Text>
         <View style={{flexDirection:'row'}}>
           <Text style={{flex:1, fontSize:20, color:'#00000096'}}>{off}% OFF {offPrice}$</Text>
           <Text style={{flex:1, fontSize:20, textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}>{offValue}</Text>

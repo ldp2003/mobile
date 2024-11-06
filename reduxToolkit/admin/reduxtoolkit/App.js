@@ -112,8 +112,8 @@ const Item = ({
   <TouchableOpacity style={styles.item} onPress={()=>{navigation.navigate('screenAdd', {id, title, price, image, desc, off})}}>
     <Image style={{left:5,position:'absolute'}} source={require('./assets/heart.png')}/>
     <Image source={{uri: image}} style={{height:110, width:120}}/>
-    <Text style={{color:'Pinarello', fontSize:15, fontWeight:'bold'}}>{title}</Text>
-    <Text style={{fontSize:15, fontWeight:'bold'}}><Text style={{color:'#F7BA83'}}>$</Text>{price}</Text>
+    <Text numberOfLines={1} ellipsizeMode='tail' style={{ color:'Pinarello', fontSize:15, fontWeight:'bold'}}>{title}</Text>
+    <Text numberOfLines={1} ellipsizeMode='tail' style={{fontSize:15, fontWeight:'bold'}}><Text style={{color:'#F7BA83'}}>$</Text>{price}</Text>
   </TouchableOpacity>
 )
 function screenHome({ navigation, route }) {
@@ -238,8 +238,8 @@ const ItemAdmin = ({
 } : ItemProps) => (
   <TouchableOpacity style={styles.item} onPress={()=>{navigation.navigate('screenAdd', {id, title, price, image, desc, off})}}>
     <Image source={{uri: image}} style={{height:110, width:120}}/>
-    <Text style={{color:'Pinarello', fontSize:15, fontWeight:'bold'}}>{title}</Text>
-    <Text style={{fontSize:15, fontWeight:'bold'}}><Text style={{color:'#F7BA83'}}>$</Text>{price}</Text>
+    <Text numberOfLines={1} ellipsizeMode='tail' style={{color:'Pinarello', fontSize:15, fontWeight:'bold'}}>{title}</Text>
+    <Text numberOfLines={1} ellipsizeMode='tail' style={{fontSize:15, fontWeight:'bold'}}><Text style={{color:'#F7BA83'}}>$</Text>{price}</Text>
   </TouchableOpacity>
 )
 function screenAdmin({navigation, route}){
